@@ -15,7 +15,14 @@ class Ball(Turtle):
         new_y = self.ycor() + self.y_move
         self.goto(new_x, new_y)
 
-    def bounce(self):
+    def bounce_y(self):
+        """Function that makes the ball bounce when it hits the wall
+        """
         
         self.y_move = self.y_move * -1
+
+    def bounce_x(self):
+        """Function that makes the ball bounce when it hits the paddle
+        """
+        self.x_move = self.x_move * -1
 
