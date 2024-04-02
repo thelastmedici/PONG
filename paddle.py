@@ -1,5 +1,6 @@
 from turtle import Turtle
 class Paddle(Turtle):
+    """Class that creates the paddle"""
     def __init__(self, position):
         """"Initialize the paddle class"""
         super().__init__()
